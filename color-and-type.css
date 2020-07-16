@@ -1,0 +1,90 @@
+section {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.colors-item {
+    display: flex;
+    font-family: "Quicksand", sans-serif;
+    font-size: 19px;
+    line-height: 29px;
+    color: var(--dark-shade100);
+    margin-bottom: 20px;
+}
+
+.color {
+    width: 70px;
+    height: 70px;
+    border-radius: 6px;
+    margin-right: 40px;
+}
+
+.color-name {
+    font-weight: 700;
+}
+
+.colors-item:nth-child(1) .color {
+    background-color: var(--dark-shade100);
+}
+
+.colors-item:nth-child(2) .color {
+    background-color: var(--dark-shade75);
+}
+
+.colors-item:nth-child(3) .color {
+    background-color: var(--dark-shade50);
+}
+
+.colors-item:nth-child(4) .color {
+    background-color: var(--dark-shade25);
+}
+
+.colors-item:nth-child(5) .color {
+    background-color: var(--dark-shade5);
+}
+
+.colors-item:nth-child(6) .color {
+    background-color: var(--purple);
+}
+
+.colors-item:nth-child(7) .color {
+    background-color: var(--green);
+}
+
+.fonts-item {
+    display: flex;
+    margin-bottom: 50px;
+}
+
+.font-name {
+    margin-right: 30px;
+    min-width: 37px;
+    display: flex;
+    justify-content: flex-end;
+    color: var(--dark-shade25);
+}
+
+.fonts-item:nth-child(1) .font-name {
+    font-size: 24px;
+    line-height: 29px;
+}
+
+.fonts-item:nth-child(2) .font-name {
+    font-size: 19px;
+    line-height: 23px;
+}
+
+.fonts-item:nth-child(3) .font-name {
+    font-size: 12px;
+    line-height: 15px;
+}
+
+.fonts-item:nth-child(4) .font-name {
+    font-size: 14px;
+    line-height: 24px;
+}
+
+.font-example {
+    max-width: 336px;
+}
