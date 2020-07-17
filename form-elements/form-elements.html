@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Color and Type</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="form-elements.css">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Подключение библиотеки jQuery -->
+    <script src="../jquery/jquery.js"></script>
+    <!-- Подключение jQuery плагина Masked Input -->
+    <script src="../jquery/jquery.maskedinput.min.js"></script>
+</head>
+
+<body>
+    <div class="text-field custom-input">
+        <div class="custom-input_name">Text Field</div>
+        <input placeholder="Email">
+    </div>
+    <div class="text-field custom-input text-field_hover">
+        <div class="custom-input_name">Text Field</div>
+        <input placeholder="Email">
+    </div>
+    <div class="text-field text-field_hover custom-input">
+        <div class="custom-input_name">Dropdown</div>
+        <select>
+            <option value="" disabled selected>Сколько гостей?</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+        </select>
+    </div>
+    <div class="text-field-date custom-input">
+        <div class="custom-input_name">masked text field</div>
+        <input id="date" placeholder="ДД.ММ.ГГГГ">
+    </div>
+</body>
+<script>
+    $(function(){
+        $("#date").mask("99.99.9999", {placeholder: "ДД.ММ.ГГГГ" });
+    });
+</script>
+</html>

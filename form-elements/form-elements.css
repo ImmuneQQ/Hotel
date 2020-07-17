@@ -1,0 +1,53 @@
+.custom-input {
+    margin-bottom: 20px;
+}
+
+.custom-input .custom-input_name {
+    margin-bottom: 5px;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 15px;
+    text-transform: uppercase;
+    color: var(--dark-shade100);
+}
+
+.custom-input input,
+.custom-input select {
+    width: 320px;
+    height: 44px;
+    border: 1px solid rgba(31, 32, 65, 0.25);
+    box-sizing: border-box;
+    border-radius: 4px;
+    padding: 13px 15px;
+    font-size: 14px;
+    line-height: 24px;
+    font-family: Montserrat, sans-serif;
+}
+
+.custom-input input::placeholder,
+.custom-input select {
+    color: var(--dark-shade25);
+    font-size: 14px;
+    line-height: 18px;
+}
+
+.custom-input select {
+    color: var(--dark-shade75);
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background: url(../img/expand_more.svg) no-repeat 290px #fff;
+}
+
+.text-field:hover input::placeholder,
+.text-field:focus input::placeholder,
+.text-field_hover input::placeholder,
+.text-field_focus input::placeholder {
+    color: var(--dark-shade75);
+}
+
+.text-field-date {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
